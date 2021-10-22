@@ -1,0 +1,13 @@
+version: "3.4"
+services: 
+    app:
+        image: python:3-alpine
+        volumes:
+            - ./:/code
+        working_dir: /code/src/come-on-board
+        command: ["python", "-m", "http.server", "8999"]
+        tty: true
+        ports: 
+            - "8999:8999"
+                
+
