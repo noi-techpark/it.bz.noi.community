@@ -4,7 +4,7 @@ services:
         image: python:3-alpine
         volumes:
             - ./:/code
-        working_dir: /code/src/come-on-board
+        working_dir: /code/src/onboarding
         command: ["python", "-m", "http.server", "8999"]
         tty: true
         ports: 

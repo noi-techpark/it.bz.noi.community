@@ -5,7 +5,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh """
-                    cd src/come-on-board
+                    cd src/onboarding
                     test -f en.html
                     test -f de.html
                     test -f it.html

@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Upload') {
             steps {
-                s3Upload(bucket: 'it.bz.noi.community-prod', acl: 'PublicRead', file: './src/come-on-board')
+                s3Upload(bucket: 'it.bz.noi.community-prod', acl: 'PublicRead', file: './src/onboarding')
             }
         }
     }
